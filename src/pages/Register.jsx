@@ -19,7 +19,7 @@ function Register() {
 
     try {
 
-      const res = await API.post("/", form);
+      const res = await API.post("/register", form);
       alert("Admin Registered Successfully");
       console.log(res.data);
        navigate("/login");
